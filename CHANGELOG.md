@@ -22,6 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Verified
 
+- GitHub Actions: Docker Build workflow (multi-arch matrix + smoke test) passed.
+- GitHub Actions: Docker Publish workflow (both images pushed to GHCR) passed.
 - Upstream image: nerdctl rootless (Ubuntu VM amd64), Docker rootful (macOS
   Intel amd64). Both passed.
 - System image: nerdctl rootless (Ubuntu VM amd64), Docker rootful (macOS

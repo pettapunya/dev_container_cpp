@@ -515,8 +515,8 @@ release. Remove or update entries as they are verified.
 |-----------------------------------|--------------|--------------------------------------------------------------|
 | Rootless nerdctl (local)          | Verified     | Ubuntu 24.04 base, nerdctl. Build + smoke test passed.       |
 | Docker rootful (macOS)            | Verified     | macOS Intel host, Docker. Build + smoke test passed.         |
-| GitHub Actions build workflow     | Pending      | Not yet tested.                                              |
-| GitHub Actions publish workflow   | Pending      | Not yet tested.                                              |
+| GitHub Actions build workflow     | Verified     | Multi-arch matrix build + smoke test passed.                 |
+| GitHub Actions publish workflow   | Verified     | v1.0.0-rc1 pushed to GHCR (both arches).                    |
 | Podman rootless (local)           | Blocked      | `--userns=keep-id` fails in Parallels VM (kernel restriction). |
 | Kubernetes deployment             | Not tested   | Image is designed to be compatible; no cluster available.    |
 
@@ -526,8 +526,8 @@ release. Remove or update entries as they are verified.
 |-----------------------------------|--------------|--------------------------------------------------------------|
 | Rootless nerdctl (local)          | Verified     | Ubuntu 24.04 base, nerdctl. Build + smoke test passed.       |
 | Docker rootful (macOS)            | Verified     | macOS Intel host, Docker. Build + smoke test passed.         |
-| GitHub Actions build workflow     | Pending      | Not yet tested.                                              |
-| GitHub Actions publish workflow   | Pending      | Not yet tested.                                              |
+| GitHub Actions build workflow     | Verified     | Multi-arch matrix build + smoke test passed.                 |
+| GitHub Actions publish workflow   | Verified     | v1.0.0-rc1 pushed to GHCR (both arches).                    |
 | Podman rootless (local)           | Blocked      | `--userns=keep-id` fails in Parallels VM (kernel restriction). |
 | Kubernetes deployment             | Not tested   | Image is designed to be compatible; no cluster available.    |
 
