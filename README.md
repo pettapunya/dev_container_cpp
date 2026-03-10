@@ -72,8 +72,8 @@ Both images use Ubuntu 24.04 and support amd64 + arm64 multi-arch builds.
 
 | Image | Ubuntu VM (amd64) | macOS Intel (amd64) | MacBook Pro (arm64) |
 |-------|:---:|:---:|:---:|
-| `dev-container-cpp` | Passed | Passed | Pending |
-| `dev-container-cpp-system` | Passed | Passed | Pending |
+| `dev-container-cpp` | Passed | Passed | Passed |
+| `dev-container-cpp-system` | Passed | Passed | Passed |
 
 ## Image Names
 
