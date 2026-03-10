@@ -7,7 +7,7 @@
 [![Clang](https://img.shields.io/badge/Clang-20-6f42c1)](#pre-installed-tools)
 [![Container](https://img.shields.io/badge/container-ghcr.io%2Fabitofhelp%2Fdev--container--cpp-0A66C2)](#image-names)
 
-Professional C++ development container for desktop and embedded (ARM Cortex-M) development.
+Professional C++ development container for desktop and embedded (ARM Cortex-M/A) development.
 
 ## Supported Architectures
 
@@ -184,6 +184,17 @@ Both images include toolchains for two embedded development workflows:
 The bare-metal toolchain includes OpenOCD, stlink-tools, and gdb-multiarch for
 flashing and debugging. The Linux cross-compiler includes the full sysroot
 (`libc6-dev-armhf-cross`) for building Linux userspace applications.
+
+### Embedded Toolchain Readiness
+
+Both images are fully self-contained for all three targets. No additional
+downloads or toolchain installation is required.
+
+| Target | Compiler | Status |
+|--------|----------|--------|
+| Desktop (native) | `g++` / `clang++` | Pre-installed |
+| STM32F769I — Cortex-M7 bare-metal | `arm-none-eabi-g++` | Pre-installed |
+| STM32MP135F — Cortex-A7 Linux | `arm-linux-gnueabihf-g++` | Pre-installed |
 
 ## STM32 Custom Image
 

@@ -81,6 +81,64 @@ flashing and debugging. The Linux cross-compiler includes the full sysroot
 For ST's proprietary tools (STM32CubeCLT, STM32CubeMX), see the "STM32 Custom
 Image" section in [README.md](README.md#stm32-custom-image).
 
+#### Configuring your project for each target
+
+**Desktop (native)**
+
+No toolchain file is needed. Configure and build with CMake directly:
+
+```bash
+cmake -B build -G Ninja
+cmake --build build
+```
+
+**STM32F769I — Cortex-M7 bare-metal**
+
+Create a CMake toolchain file at `cmake/arm-none-eabi.cmake`:
+
+```cmake
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(CMAKE_C_COMPILER   arm-none-eabi-gcc)
+set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
+set(CMAKE_ASM_COMPILER arm-none-eabi-gcc)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+```
+
+Then configure with the toolchain file:
+
+```bash
+cmake -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake
+cmake --build build
+```
+
+**STM32MP135F — Cortex-A7 Linux**
+
+Create a CMake toolchain file at `cmake/arm-linux-gnueabihf.cmake`:
+
+```cmake
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(CMAKE_C_COMPILER   arm-linux-gnueabihf-gcc)
+set(CMAKE_CXX_COMPILER arm-linux-gnueabihf-g++)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+```
+
+Then configure with the toolchain file:
+
+```bash
+cmake -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=cmake/arm-linux-gnueabihf.cmake
+cmake --build build
+```
+
 ---
 
 ## 1. Prerequisites
